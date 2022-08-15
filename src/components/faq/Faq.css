@@ -1,0 +1,111 @@
+*{
+    overflow-x: hidden;
+  }
+  .faq-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .faq-container h1 {
+    font-size: 3rem;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    font-family: "Darker Grotesque";
+    font-style: normal;
+    font-weight: 900;
+  }
+  .faq-container .faqs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 90%;
+    position: absolute;
+    top: 35%;
+    /* left:12%; */
+    justify-content: space-around;
+  }
+  .faq {
+    max-width: 25vw;
+    height: 54vh;
+    margin: 0.5rem 1rem;
+    text-align: center;
+    box-shadow: 0px 4px 37px rgba(0, 0, 0, 0.15);
+    border : 1px  rgba(0, 0, 0, 1)
+  }
+  .faq h2 {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-family: "Darker Grotesque";
+    font-style: normal;
+    font-weight: 700;
+    padding: 1.5rem 0;
+    color: #0e0606;
+  }
+  .faq .text {
+    padding: 1.5rem;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.98rem;
+    color: #686868;
+  }
+  .faq .line {
+    position: relative;
+    height: 0.5px;
+    width:6vw;
+    left:40%;
+    background-color: rgba(237, 83, 64, 1);
+    border: 2.5px solid #ed5340;
+    margin-top:1rem;
+    margin-bottom:1.6rem;
+    /* justify-content: center; */
+  }
+  @media screen and (max-width:940px) {
+      .faq-container .faqs{
+        flex-direction: column;
+      } 
+      .faq {
+        /* height:50vh; */
+        max-width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        margin: 1rem 1rem;
+       
+      }
+      .faq .text{
+        font-size:1.1rem;
+        padding-top: 2rem;
+      }
+      .faq h2{
+        font-size:1.4rem;
+      }
+      .faq .line {
+        position: absolute;
+        height: 0.5px;
+        width:13vw;
+        /* top:20vh; */
+        /* left:5%; */
+        background-color: rgba(237, 83, 64, 1);
+        border: 2.5px solid #ed5340;
+        margin-top:0;
+        margin-bottom:7rem;
+        /* justify-content: center; */
+      }
+      .faq-container h1 {
+        font-size: 3rem;
+        position: absolute;
+        top: 10%;
+        left: 37%;
+        font-family: "Darker Grotesque";
+        font-style: normal;
+        font-weight: 900;
+      }
+  }
+  
+  

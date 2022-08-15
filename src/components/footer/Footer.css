@@ -1,0 +1,85 @@
+.footer {
+  position: absolute;
+  background: #4d4d4d;
+  backdrop-filter: blur(4px);
+  top: 100vh;
+  width: 100%;
+  height: 50vh;
+}
+.footer-content {
+  max-width: 25%;
+  margin-left: 5rem;
+  margin-top: 3rem;
+}
+.logo-clubname {
+  display: flex;
+  margin: 1.5rem;
+  align-items: center;
+}
+.clubname {
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 900;
+  color: rgba(255, 82, 0, 1);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.clubname span {
+  color: #fff;
+}
+ .text {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  color:rgba(190, 191, 191, 1);
+  margin: 1.5rem;
+  text-align: justify;
+  /* font-size: 1.2rem; */
+}
+.text span{
+    color: rgba(255, 82, 0, 1);
+}
+.social-links{
+    display:flex;
+    width:100%;
+    margin:1.6rem 0.5rem;
+    /* justify-content: space-evenly; */
+}
+.social-links .icon{
+    font-size:1.2rem;
+    color:white;
+    margin:0 1.2rem;
+    /* padding:0 0.7rem; */
+}
+@media screen and (max-width:940px) {
+    .footer {    
+        top: 220vh;
+        width: 100%;
+        height: 60vh;
+      }
+      .footer-content {
+        max-width: 38%;
+        margin-left: 1.5rem;
+        margin-top: 2.5rem;
+      }
+      .logo-clubname {
+        margin:0.8rem;
+      }
+      .clubname {
+        font-size: 1rem;
+        text-transform: uppercase;
+      }
+      .text {
+        font-size: 0.9rem;
+        margin: 0.8rem;
+      }
+      .social-links{
+        margin:1.5rem 0.1rem;
+        /* justify-content: space-evenly; */
+    }
+    .social-links .icon{
+        font-size: 1rem;
+        margin:0 1rem;
+        /* padding:0 0.7rem; */
+    }
+}
